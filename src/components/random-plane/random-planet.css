@@ -1,0 +1,23 @@
+.random-planet {
+
+    background: #303030;
+
+
+}
+.img-planet img{
+
+    width: 200px;
+    height: 200px;
+}
+.main-planet{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.img-planet{
+    background: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+

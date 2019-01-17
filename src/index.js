@@ -1,12 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Head from './components/header/header.js'
+import Planets from './components/random-plane/random-planet.js'
+import Persondetails from './components/person-details/person-details.js'
+import Items from './components/item-list/item-list.js'
+import './style.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class Index extends React.Component {
+  state = {
+    selectPerson : 1,
+  };
+ checkId = (id)=>{
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    this.setState({
+      selectPerson:id,
+    })
+  };
+  render() {
+
+    return (
+      <div className='container'>
+        <Head/>
+        <Planets/>
+        <div className='container inform'>
+          <div className='row'>
+            <div className="col-md-6">
+              <Items checkId={this.checkId}/>
+
+            </div>
+            <div className="col-md-6"><Persondetails personId={this.state.selectPerson}/></div>
+          </div>
+        </div>
+      </div>
+    )
+  };
+}
+ReactDOM.render(<Index/>,document.getElementById('root'))

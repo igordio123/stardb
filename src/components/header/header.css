@@ -1,0 +1,28 @@
+.header{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu nav{
+    display:flex;
+
+
+
+
+}
+.top-menu nav li{
+    margin-right: 30px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.nav li:hover{
+    background: gray;
+
+}
+

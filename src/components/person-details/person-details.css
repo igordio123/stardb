@@ -1,0 +1,23 @@
+.preson-details {
+
+    background: #303030;
+
+
+}
+.preson-details img{
+
+    width: 150px;
+    height: 150px;
+}
+.main-person{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-person{
+    background: black;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
